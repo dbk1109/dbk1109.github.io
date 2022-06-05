@@ -1,0 +1,1192 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css?family=Exo:400,600,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Jua:400');
+
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol {
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 0;
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+	color: initial;
+}
+/* end reset browser styles */
+
+/* start stylesheet */
+
+* { font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Exo', sans-serif;
+    font-style: normal;
+    text-decoration: none;}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.kr {
+    font-family: 'Jua', sans-serif !important;
+}
+
+/*-----------------nav------------------*/
+
+
+header {
+    text-align: center;
+    width: 20%;
+    height: 100vh;
+    color: #f2694b;
+    padding: 4%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 999;
+    background: #fff;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .3);
+}
+.logo {
+    margin-top: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header .logo img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+.ninja {
+    display: none;
+    cursor: pointer;
+    font-size: 2em;
+    color: #f2694b;
+}
+nav {
+    line-height: 3em;
+    margin: 80% 0;
+    font-size: 1.2em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav a {
+    display: block;
+    color: #f2694b;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.current {
+    font-weight: 900;
+}
+
+nav span {
+    border: 1px solid #f2694b;
+    color: #f2694b;
+    border-radius: 20px;
+    padding: 0 30px;
+}
+
+nav span.navlcspan {
+    text-decoration: none;
+    background: #f2694b;
+    color: #fff;
+}
+
+.lang p {
+    display: inline-block;
+    font-weight: bold;
+    font-style: italic;
+    color: #f2694b;
+    border-bottom: 2px solid transparent;
+}
+
+.lang i {
+    margin: 0 10px;
+}
+
+header .copy {
+    position: relative;
+    margin-top: 10%;
+    font-size: .7em;
+}
+p.langap {
+    border-bottom: 2px solid #f2694b;
+    position: relative;
+    bottom: 5px;
+}
+
+/*----------------------container----------------------*/
+
+#container {
+    width: 80%;
+    min-height: 100%;
+    margin-left: 20%;
+}
+
+section {
+    width: 100%;
+    padding: 4vw 8vw;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#main {
+    background: #f2694b;
+    min-height: 100vh;
+}
+
+#main .title {
+    margin: 6% 0;
+    font-size: 16em;
+    line-height: 100%;
+    font-weight: 900;
+}
+
+#main .title h2:nth-child(1) {
+    color: white;
+    position: absolute;
+    z-index: 100;
+}
+
+#main .title h2:nth-child(2) {
+    color: #ffcd76;
+    margin-left: 8px;
+    padding-top: 8px;
+    position: relative;
+    z-index: 99;
+}
+
+#main .title_bg {
+    font-size: 24em;
+    line-height: .8em;
+    font-weight: 900;
+    color: #e66548;
+    position: absolute;
+    right: 0;
+    top: -7%;
+    opacity: 1;
+}
+
+#main .subtitle {
+    color: #ffcd76;
+    font-size: 1.5em;
+    line-height: 1.5;
+    position: relative;
+    z-index: 100;
+}
+
+#main .rightline {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    z-index: 100;
+}
+
+.rightline i {
+    color: #fff;
+}
+
+.rightline .line {
+    width: 2px;
+    height: 50vh;
+    display: block;
+    margin: 1vh 0;
+    margin-left: 13px;
+    background: #ffcd76;
+}
+
+.rightline p {
+    transform: rotate(90deg);
+    -webkit-transform-origin: 0% 130%;
+    position: absolute;
+    width: 850%;
+    color: #ffcd76;
+    margin-top: -20px;
+}
+
+#deco {
+    background: #ffcd76 url("/img/bg.png") repeat-x right top;
+    min-height: 65px;
+    padding: 0;
+}
+
+#deco2 {
+    background: #efefef url("/img/bg2.png") repeat-x right top;
+    min-height: 65px;
+    padding: 0;
+}
+
+/*---------------about---------------------*/
+#container #about {
+    background: #ffcd76;
+}
+
+.welcome {
+    margin-top: -40px;
+}
+
+.welcome div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.welcome .text {
+    width: 82%;
+    background: #fff;
+    border-radius: 100px;
+    padding: 2% 4%;
+    margin-right: 2%;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.welcome span {
+    color: #f2694b;
+    font-weight: 900;
+    font-size: 3.5em;
+    width: 13%;
+    display: inline-block;
+    vertical-align: middle;
+}
+span.dn {
+    color: unset;
+    font-weight: unset;
+    font-size: unset;
+    width: unset;
+}
+
+.welcome .img {
+    width: 15%;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+.skill, .cel {
+    background: #fff;
+    padding: 5%;
+    padding-bottom: 3%;
+    margin: 2% 0 auto;
+    border-radius: 10px;
+}
+
+#about h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 3%;
+    text-decoration: underline;
+}
+
+.skill .graf {
+    display: inline-block;
+    width: 32%;
+    margin-right: 1.5%;
+    margin-bottom: 2%;
+    line-height: 2em;
+    position: relative;
+}
+.graf div {
+    display: inline-block;
+    font-size: 95%;
+    width: 20%;
+    padding-right: 2%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.graf .per {
+    width: 78%;
+    height: 20px;
+    background: #efefef;
+    border-radius: 50px;
+    vertical-align: text-top;
+    padding: 0;
+    overflow: hidden;
+}
+
+.graf .per > div {
+    height: 100%;
+    background: linear-gradient(to right, #f2694b, #ffcd76);
+    padding: 0;
+    border-radius: 50px;
+}
+.graf span {
+    position: absolute;
+    left: 25%;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.graf:nth-child(3n+1) {
+    margin-right: 0;
+}
+
+.cel div > div {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.cel div > div:last-child {
+    margin: 0;
+}
+
+.career {
+    margin-bottom: 4%;
+}
+
+.career div:nth-child(even),
+.education div:nth-child(even) {
+    width: 17%;
+    vertical-align: top;
+    background: #efefef;
+    border-radius: 50px;
+    padding: 0.5% 2%;
+    text-align: center;
+    margin-right: 2%;
+}
+
+.career div:nth-child(odd),
+.education div:nth-child(odd) {
+    width: 80%;
+    padding: 0.5% 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.license div:nth-child(even) {
+    width: 42%;
+    vertical-align: top;
+    background: #efefef;
+    border-radius: 50px;
+    padding: 0.5% 2%;
+    margin-right: 1%;
+}
+
+.license div:nth-child(odd) {
+    width: 56%;
+    margin-bottom: 20px;
+    padding: 0.5% 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.cel div > div:nth-child(odd) .comp {
+    font-size: 1.5em;
+    color: #f2694b;
+    margin-top: -0.5%;
+    margin-bottom: 1%;
+}
+
+.cel div > div:nth-child(odd) span {
+    font-size: 0.7em;
+    color: #cacaca;
+}
+.cel div > div:nth-child(odd) span.cont {
+    font-size: 1em;
+    color: #f2694b;
+}
+
+/*------------------------work---------------------*/
+#work {
+    background: #efefef;
+}
+
+#work h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 3%;
+    text-decoration: underline;
+}
+
+#work a {
+    width: 49.2%;
+    height: 19.8vw;
+    display: inline-block;
+    margin: 0 1% 1% 0;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: black;
+    position: relative;
+    transition: 0.4s;
+}
+
+#work a:nth-child(2n+1) {
+    margin-right: 0;
+}
+
+#work a img {
+    transition: 0.4s;
+    transform: scale(1);
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+#work a img.imghover {
+    opacity: 1;
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+#work a div {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6vw;
+    text-align: left;
+    padding: 6%;
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .8) 95%);
+    transform: translateY(20vw);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: 0.4s;
+    font-size: 1.2em;
+}
+
+#work a div.divhover {
+    opacity: 1;
+    transform: translateY(14vw);
+    transition: 0.4s;
+}
+
+#work a.a_none {
+    cursor: help;
+    background: #f2694b url(/img/work/none_bg.png) right bottom / contain no-repeat;
+    background-attachment: fixed;
+}
+
+#work a.a_none img {
+    opacity: 1;
+}
+
+/*--------------sub------------------*/
+.work_sub section:nth-child(1) {
+    min-height: 50vh;
+    height: 100%;
+    padding: 0;
+    background: #efefef; /* old */
+}
+.work_sub .work_title {
+    width: 100%;
+    background: #efefef; /* old */
+    background: linear-gradient(100deg, rgb(239, 239, 239) 47%, rgba(0, 0, 0, 0) 70%);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 50vh;
+    padding: 5% 50% 5% 10%;
+}
+
+.work_title a {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 2px 2px 2px lightgrey;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: 3px;
+}
+
+.work_title a:hover,
+.work_title a:focus {
+    bottom: 4px;
+    outline: none;
+    color: #f2694b;
+}
+.work_sub img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.work_title h2 {
+    font-size: 2em;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    text-decoration: underline;
+}
+.work_title h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+.work_title p {
+    line-height: 1.5em;
+}
+
+.work_sub section:nth-child(2) {
+    background: #fff;
+    padding: 0;
+}
+
+.work_sub section:nth-child(2) img {
+    display: block;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.work_sub section:nth-child(3) {
+    background: #efefef;
+}
+
+.work_sub section:nth-child(3) div {
+    display: inline-block;
+    width: 49%;
+    max-width: 600px;
+    margin-right: 0.5vw;
+    vertical-align: top;
+}
+.work_sub section:nth-child(3) div:nth-child(2) {
+    margin-right: 0;
+}
+.work_sub section:nth-child(3) h3 {
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: overline;
+}
+.work_sub section:nth-child(3) p {
+    padding: 3% 0 8%;
+}
+.work_sub section:nth-child(3) img {
+    box-shadow: 0 0 10px #c3c3c3;
+}
+.work_sub section:nth-child(4) div:nth-child(1) {
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+    margin-right: 7%;
+}
+.work_sub section:nth-child(4) div:nth-child(2) {
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+}
+.work_sub section:nth-child(5) div:nth-child(1) {
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+    margin-right: 7%;
+}
+.work_sub section:nth-child(5) div:nth-child(2) {
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+}
+.work_sub section:nth-child(4) h2,
+.work_sub section:nth-child(5) h2 {
+    font-size: 2em;
+    text-decoration: underline;
+    margin: 15% 0;
+    width: 75%;
+}
+.work_sub section:nth-child(4) p,
+.work_sub section:nth-child(5) p {
+    line-height: 2rem;
+}
+
+/*----------------------footer----------------------------*/
+footer {
+    width: 100%;
+    min-height: 100%;
+    color: white;
+    font-size: 2em;
+    background: linear-gradient(to right, #f2694b, #ffcd76);
+    padding: 5% 10%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+footer h1 {
+    display: inline-block;
+}
+footer a {
+    display: inline-block;
+    font-size: 0.7em;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 2px 3%;
+    margin-left: 10px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 3px;
+}
+footer a i {
+    font-size: 0.8em;
+}
+footer a:hover {
+    background: #fff;
+    color: #000;
+}
+
+/*----------------responsive media query-----------------*/
+
+@media (max-width: 1680px) {
+    .welcome .text {
+        font-size: 1.2em;
+    }
+    .graf div {
+        font-size: 80%;
+    }
+    .cel div > div {
+        font-size: 90%;
+    }
+}
+@media (max-width: 1510px) {
+    .welcome .text {
+        font-size: 1.1em;
+    }
+    .skill .graf {
+        width: 31.9%;
+    }
+}
+@media (max-width: 1440px) {
+    #main .title_bg {
+        font-size: 18em;
+    }
+    #main .title {
+        font-size: 14em;
+        margin: 5% 0;
+    }
+    .rightline .line {
+        height: 44vh
+    }
+    .welcome span {
+        width: 15%;
+    }
+    .graf div {
+        font-size: 75%;
+    }
+    .cel div > div {
+        font-size: 79%;
+    }
+    #work a div.divhover {
+        transform: translateY(13.5vw);
+        font-size: 1.1em;
+        height: 7vw;
+    }
+    .welcome .text {
+        padding: 3% 4%;
+    }
+    span.dn { display: none;}
+}
+@media (max-width: 1185px) {
+    header {
+        padding: 4vh;
+    }
+    nav {
+        margin: 18vh 0;
+    }
+    nav span {
+        padding: 0 20%;
+    }
+    #main .title_bg {
+        font-size: 20em;
+        opacity: 0.7;
+        right: 0.2em;
+    }
+    #main .title {
+        margin: 16% 0;
+        font-size: 11em;
+    }
+    #main .subtitle {
+        font-size: 1.2em;
+    }
+    .rightline .line {
+        height: 43vh;
+    }
+    .welcome {
+        margin-top: -20px;
+    }
+    .welcome span {
+        width: 18%;
+    }
+    .welcome .text {
+        font-size: 1em;
+    }
+    .skill .graf {
+        width: 48%;
+        margin-right: 3%;
+    }
+    .graf span {
+        top: -1px;
+    }
+    .graf:nth-child(3n+1) {
+        margin-right: 3%;
+    }
+    .graf:nth-child(2n+1) {
+        margin-right: 0;
+    }
+    .cel div > div {
+        font-size: 90%;
+    }
+    #work h2 {
+        font-size: 1.5em;
+    }
+    #work a {
+        width: 49%;
+    }
+    #work a img.imghover {
+        transform: scale(1.21);
+    }
+    #work a div {
+        opacity: 1;
+        height: 7vw;
+        transform: translateY(13vw);
+        font-size: 1em;
+    }
+    #work a div.divhover {
+        height: 7.5vw;
+        transform: translateY(12.5vw);
+        font-size: 1em;
+    }
+    footer h1 {
+        font-size: 85%;
+    }
+    footer a {
+        font-size: 50%;
+        padding: 2px 5%;
+    }
+}
+@media (max-width: 960px) {
+    header {
+        width: 100%;
+        height: 10vh;
+        padding: 0 3%;
+        text-align: left;
+    }
+    header .copy {
+        font-size: .5em;
+    }
+    .logo {
+        margin: 0;
+        width: 20%;
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 8px 0;
+    }
+    header .logo img {
+        height: 100%;
+        width: auto;
+    }
+    nav {
+        margin: 0;
+        display: inline-block;
+        width: 60%;
+    }
+    ul {
+        display: inline-block;
+        text-align: center;
+        width: 72%;
+    }
+    nav>a {
+        display: inline-block;
+        width: 20%;
+    }
+    li {
+        display: inline-block;
+        width: 30%;
+    }
+    nav ul>a {
+        display: inline-block;
+        width: 35%;
+    }
+    nav span {
+        padding: 0 15%;
+    }
+    .lang {
+        display: inline-block;
+        text-align: right;
+        width: 15%;
+        margin-left: 3%;
+    }
+
+    #container {
+        width: 100%;
+        margin: 0;
+        padding-top: 10vh;
+    }
+    #main {
+        min-height: 70vw;
+    }
+    #main .title {
+        margin-bottom: 0;
+        font-size: 25vw;
+    }
+    #main .title h2:nth-child(2) {
+        margin-left: 1.5%;
+        padding-top: 2%;
+    }
+    #main .subtitle {
+        display: none;
+    }
+    #main .rightline {
+        top: unset;
+        right: unset;
+        width: 100%;
+        position: relative;
+        font-size: 3.5vw;
+        margin: 8% 0;
+    }
+    .rightline a,
+    .rightline .line {
+        display: none;
+    }
+    .rightline p {
+        transform: unset;
+        width: 100%;
+        position: unset;
+        margin: 0;
+    }
+    header .copy {
+        display: none;
+    }
+    .welcome {
+        margin-top: 0;
+    }
+    .career {
+        margin-bottom: 7%;
+    }
+    .education {
+        margin-bottom: 3%;
+    }
+    .career div:nth-child(even), .education div:nth-child(even) {
+        width: auto;
+        padding: 1% 6% 1% 4%;
+        margin: 0;
+        border-radius: 0;
+        border-top-right-radius: 20px;
+    }
+    .career div:nth-child(odd), .education div:nth-child(odd) {
+        width: 100%;
+        padding: 3% 0 3% 3%;
+        border-left: 2px solid #efefef;
+    }
+    .cel div > div:nth-child(odd) span {
+        margin: 1% 0 2%;
+        display: block;
+    }
+    #work a {
+        height: 22vw;
+    }
+    #work a div,
+    #work a div.divhover{
+        height: 10vw;
+    }
+    .work_sub section:nth-child(4) div:nth-child(1),
+    .work_sub section:nth-child(4) div:nth-child(2) {
+        display: block;
+        width: 100%;
+        margin-top: 5%;
+    }
+    .work_sub section:nth-child(4) h2 {
+        margin: 0 4% 0 0;
+        display: inline-block;
+        width: 20%;
+        vertical-align: top;
+    }
+    .work_sub section:nth-child(4) p {
+        display: inline-block;
+        width: 75%;
+    }
+    footer h1 {
+        font-size: 3vw;
+    }
+}
+@media (max-width: 740px) {
+    header {
+        padding: 0;
+        height: 8vh;
+    }
+    .logo {
+        padding: 2% 3%;
+        width: 29%;
+        vertical-align: top;
+    }
+    nav {
+        position: relative;
+        width: 70%;
+        height: 8vh;
+        padding: 2% 3%;
+        line-height: 2.5em;
+    }
+    .ninja {
+        display: inline-block;
+        float: right;
+        width: 8vh;
+        height: 8vh;
+        line-height: 8vh;
+        text-align: center;
+    }
+    nav>a, ul, .lang, .welcome .img {
+        display: none;
+    }
+    .active {
+        background: rgba(255,255,255,.9);
+    }
+    .active .logo {
+        height: 8vh;
+    }
+    .active .lang {
+        width: 100%;
+    }
+    .active nav>a, .active ul, .active .lang {
+        display: block;
+        text-align: center;
+        font-size: 1.5em;
+        width: 100%;
+        margin: 0;
+    }
+    .active nav {
+        width: 100%;
+        padding: 22vw 3% 25vw;
+        height: auto;
+        line-height: 5em;
+    }
+    .active nav a {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    .active li {
+        display: block;
+        width: 100%;
+    }
+    .active .copy {
+        display: block;
+        margin-top: 2vh;
+        font-size: 0.8em;
+        text-align: center;
+    }
+    #container {
+        padding-top: 8vh;
+    }
+    .activecont {
+        padding: 0 !important;
+        filter: blur(10px);
+    }
+    .activecont #main {
+        padding-top: 12vh;
+        min-height: 78vh;
+    }
+    #main .title_bg {
+        opacity: 0.7;
+        right: 0.5em;
+        top: 0.5em;
+        font-size: 32vw;
+    }
+    .welcome .text {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .text div {
+        font-size: 2.5vw;
+        line-height: 1.3em;
+    }
+    .welcome span {
+        width: 15vw;
+        font-size: 3em;
+    }
+    .skill, .cel {
+        margin: 4% 0 auto;
+    }
+    .skill .graf, .graf:nth-child(3n+1) {
+        margin-right: 2%;
+    }
+    .graf:nth-child(2n+1) {
+        margin-right: 0;
+    }
+    .graf .per {
+        width: 75%;
+    }
+    .graf span {
+        font-size: 2vw;
+        left: 10vw;
+    }
+    .work_sub section:nth-child(1) {
+        height: auto;
+    }
+    .work_sub .work_title {
+        padding: 10%;
+        height: auto;
+        background: rgba(239, 239, 239, 0.8);
+    }
+    .work_sub .work_title h2 {
+        margin-top: 7%;
+        margin-bottom: 2%;
+        font-size: 5vw;
+    }
+    .work_sub section:nth-child(3) {
+        padding: 3vw;
+    }
+    .work_sub section:nth-child(3) div {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+    .work_sub section:nth-child(3) div:nth-child(2) {
+        margin-top: 2vw;
+    }
+    .work_sub section:nth-child(3) h3 {
+            margin: 3% 0 5%;
+    }
+    .work_sub section:nth-child(4) h2,
+    .work_sub section:nth-child(5) h2,
+    .work_sub section:nth-child(4) p,
+    .work_sub section:nth-child(5) p{
+        margin: 5% 0;
+        display: block;
+        width: 100%;
+    }
+    .work_sub section:nth-child(4) h2 {
+        text-align: center;
+    }
+    .work_sub section:nth-child(5),
+    .work_sub section:nth-child(5) div {
+        width: 100% !important;
+        margin: 0;
+    }
+    
+    footer a {
+        bottom: -3px;
+    }
+}
+@media (max-width: 575px) {
+    .cel div > div:nth-child(odd) .comp {
+        font-size: 1.3em;
+    }
+    #work a {
+        height: 25vw;
+        width: 100%;
+        margin: 0 0 1.5% 0;
+    }
+    #work a img {
+        transform: scale(0.6) translateY(-12vh) translateX(-28vw);
+    }
+    #work a img.imghover {
+        transform: scale(0.75) translateY(-11vh) translateX(-22vw);
+    }
+    #work a.a_none {
+        background-size: cover;
+    }
+    #work a.a_none img {
+        transform: scale(0.7) translateY(-11vh);
+    }
+    #work a div, #work a div.divhover {
+        width: 40vw;
+        height: 100%;
+        transform: translateX(0);
+        right: 0;
+        left: unset;
+        background: linear-gradient(104deg, rgba(0, 0, 0, 0) 15%, #da6349 15%);
+        padding: 6% 5% 5% 14%;
+    }
+    #work a div.divhover {
+        width: 38vw;
+        background: linear-gradient(104deg, rgba(0, 0, 0, 0) 15%, #f2694b 15%);
+    }
+    #work a div p {
+        font-size: 2.8vw;
+    }
+    footer {
+        text-align: center;
+    }
+    footer h1 {
+        font-size: 1.1rem;
+        display: block;
+        margin-bottom: 3%;
+    }
+    footer a {
+        font-size: 0.7em;
+        padding: 2px 20%;
+        display: block;
+        margin: 0;
+    }
+}
+@media (max-width: 960px) and (max-height: 640px) {
+    nav {
+        font-size: 1.1em;
+    }
+    nav span {
+        padding: 0 14%;
+    }
+    #main .title_bg {
+        font-size: 20vw;
+    }
+    #main .title {  
+        margin: 4% 0;
+    }
+    #main .subtitle {
+        font-size: 1em;
+    }
+    .rightline .line {
+        height: 40vh;
+    }
+    .rightline p {
+        font-size: 0.7em;
+    }
+    .work_sub section:nth-child(1), .work_sub .work_title {
+        height: 80vh;
+    }
+    footer {
+        font-size: 1.7em;
+    }
+}
